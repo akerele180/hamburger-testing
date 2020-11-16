@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #31D45D;
+    background: -webkit-linear-gradient(left, #31D45D, #2BB7DA);
+    background: -moz-linear-gradient(left, #31D45D, #2BB7DA);
+    background: linear-gradient(to right, #31D45D, #2BB7DA);
+}
+header nav div.nav-list ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul div.lists {
+    display: flex;
+}
+li { 
+    list-style-type: none;
+    font-size: 18px;
+}
+a {
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 5px 0;
+}
+a:hover {
+    border-bottom: 2px solid whitesmoke;
+    /* border-left: 2px solid whitesmoke; */
+}
+span {
+    color: var(--White);
+    background: #31D45D;
+    background: -webkit-linear-gradient(left, #31D45D, #2BB7DA);
+    background: -moz-linear-gradient(left, #31D45D, #2BB7DA);
+    background: linear-gradient(to right, #31D45D, #2BB7DA);
+    border-radius: 2rem;
+    padding: 15px 40px;
+    color: #fff;
+}
+span:hover {
+    filter: brightness(1.2);
+}
+
+
+@media screen and (min-width: 801px){
+    div.svgs {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    span, svg#cancel{
+        display: none;
+    }
+    ul div.lists {
+        background: #31D45D;
+        background: -webkit-linear-gradient(left, #31D45D, #2BB7DA);
+        background: -moz-linear-gradient(left, #31D45D, #2BB7DA);
+        background: linear-gradient(to right, #31D45D, #2BB7DA);
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        top: 72px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: ;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 8px;
+        z-index: 20;
+        animation: swing 1s ease;}
+    div.lists li {
+        padding: 10px;
+    }
+}
